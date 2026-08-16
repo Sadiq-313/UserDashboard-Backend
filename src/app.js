@@ -30,6 +30,10 @@ async function main() {
   }
 }
 
+app.get("/", (req, res) => {
+    res.send("User Dashboard Backend is Live 🚀");
+});
+
 app.use("/api/v1/auth", AuthRoutes);
 app.use("/api/v1/users", UserRoutes);
 
